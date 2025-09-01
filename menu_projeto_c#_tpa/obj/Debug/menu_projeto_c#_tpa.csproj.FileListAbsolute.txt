@@ -1,0 +1,16 @@
+C:\Users\LabInfo\Desktop\menu_projeto_c#_tpa_solucao\menu_projeto_c#_tpa\bin\Debug\menu_projeto_c#_tpa.exe.config
+C:\Users\LabInfo\Desktop\menu_projeto_c#_tpa_solucao\menu_projeto_c#_tpa\bin\Debug\menu_projeto_c#_tpa.exe
+C:\Users\LabInfo\Desktop\menu_projeto_c#_tpa_solucao\menu_projeto_c#_tpa\bin\Debug\menu_projeto_c#_tpa.pdb
+C:\Users\LabInfo\Desktop\menu_projeto_c#_tpa_solucao\menu_projeto_c#_tpa\obj\Debug\menu_projeto_c#_tpa.csproj.AssemblyReference.cache
+C:\Users\LabInfo\Desktop\menu_projeto_c#_tpa_solucao\menu_projeto_c#_tpa\obj\Debug\menu_projeto_c#_tpa.csproj.CoreCompileInputs.cache
+C:\Users\LabInfo\Desktop\menu_projeto_c#_tpa_solucao\menu_projeto_c#_tpa\obj\Debug\menu_projeto_c#_tpa.exe
+C:\Users\LabInfo\Desktop\menu_projeto_c#_tpa_solucao\menu_projeto_c#_tpa\obj\Debug\menu_projeto_c#_tpa.pdb
+C:\Users\LabInfo\Desktop\menu_projeto_c#_tpa_solucao\menu_projeto_c#_tpa\obj\Debug\menu_projeto_c#_tpa.exe.config
+C:\Users\vinic\Downloads\menu_projeto_c#_tpa_solucao\menu_projeto_c#_tpa\bin\Debug\menu_projeto_c#_tpa.exe.config
+C:\Users\vinic\Downloads\menu_projeto_c#_tpa_solucao\menu_projeto_c#_tpa\bin\Debug\menu_projeto_c#_tpa.exe
+C:\Users\vinic\Downloads\menu_projeto_c#_tpa_solucao\menu_projeto_c#_tpa\bin\Debug\menu_projeto_c#_tpa.pdb
+C:\Users\vinic\Downloads\menu_projeto_c#_tpa_solucao\menu_projeto_c#_tpa\obj\Debug\menu_projeto_c#_tpa.csproj.AssemblyReference.cache
+C:\Users\vinic\Downloads\menu_projeto_c#_tpa_solucao\menu_projeto_c#_tpa\obj\Debug\menu_projeto_c#_tpa.exe.config
+C:\Users\vinic\Downloads\menu_projeto_c#_tpa_solucao\menu_projeto_c#_tpa\obj\Debug\menu_projeto_c#_tpa.csproj.CoreCompileInputs.cache
+C:\Users\vinic\Downloads\menu_projeto_c#_tpa_solucao\menu_projeto_c#_tpa\obj\Debug\menu_projeto_c#_tpa.exe
+C:\Users\vinic\Downloads\menu_projeto_c#_tpa_solucao\menu_projeto_c#_tpa\obj\Debug\menu_projeto_c#_tpa.pdb
