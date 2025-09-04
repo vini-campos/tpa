@@ -34,10 +34,10 @@ namespace Menu_Projeto_CSharp_Console
 
                 SetCursorPosition(25, 4); Write("[0] Descanso de tela");
                 SetCursorPosition(25, 5); Write("[1] Menu de vetores");
-                SetCursorPosition(25, 6); Write("[2] Tabuada");
-                SetCursorPosition(25, 7); Write("[3] Média aritmética");
-                SetCursorPosition(25, 10); Write("[6] Fim");
-                SetCursorPosition(25, 11); Write("[7] Adivinhe o número");
+                SetCursorPosition(25, 6); Write("[2] Adivinhe o número");
+                SetCursorPosition(25, 7); Write("[3] Tabuada");
+                SetCursorPosition(25, 8); Write("[4] Média aritmética");
+                SetCursorPosition(25, 9); Write("[5] Fim");
 
                 SetCursorPosition(0, 13);
                 Linha();
@@ -59,16 +59,16 @@ namespace Menu_Projeto_CSharp_Console
                         Menu_vetores();
                         break;
                     case 2:
-                        Tabuada();
+                        AdivinhaNum();
                         break;
                     case 3:
+                        Tabuada();
+                        break;
+                    case 4: 
                         Analisa_num();
                         break;
-                    case 6: 
-                        //adicionar opção de sair
-                        break;
-                    case 7:
-                        AdivinhaNum();
+                    case 5:
+                        //fim
                         break;
                     default: //caso contrario
                         SetCursorPosition(25, 20);
@@ -77,7 +77,16 @@ namespace Menu_Projeto_CSharp_Console
                         break;
                 }
     
-            } while (opcao != 6);
+            } while (opcao != 5);
+        }
+
+        static void Janela()
+        {
+            string[] linhasConteudo;
+            {
+
+            }
+
         }
 
         static void Menu_vetores()
@@ -595,70 +604,63 @@ namespace Menu_Projeto_CSharp_Console
             } while (repetir == "sim");
         }
 
-        static void ComparaNumeros()
+        static void AdivinhaNum()
         {
             string repetir = "";
-            int num1, num2;
+            int num, palpite, tentativas;
+
+            Random aleatorio = new Random();
+            aleatorio.Next(1,10);
 
             do
             {
                 Clear();
-                BackgroundColor = ConsoleColor.DarkMagenta;
+                BackgroundColor = ConsoleColor.DarkCyan;
                 ForegroundColor = ConsoleColor.Yellow;
                 Clear();
                 SetCursorPosition(0, 0);
                 Linha();
-                SetCursorPosition(23, 1);
-                Write("****** Comparação de Números ******");
+                SetCursorPosition(25, 1);
+                Write("****** Adivinhe o Número ******");
                 SetCursorPosition(0, 2);
                 Linha();
                 SetCursorPosition(0, 13);
                 Linha();
                 SetCursorPosition(0, 19);
                 Linha();
-
-                SetCursorPosition(25, 4);
-                Write("Digite o primeiro número: ");
-                while (!int.TryParse(ReadLine(), out num1))
+                num = aleatorio.Next(1, 11);
+                tentativas = 0;
+                do
                 {
-                    SetCursorPosition(25, 5);
-                    Write("Digite um número válido: ");
-                }
-
-                SetCursorPosition(25, 6);
-                Write("Digite o segundo número: ");
-                while (!int.TryParse(ReadLine(), out num2))
-                {
-                    SetCursorPosition(25, 7);
-                    Write("Digite um número válido: ");
-                }
-
-                if (num1 > num2)
+                    SetCursorPosition(25, 4);
+                    Write("Digite um número entre 1 e 10: ");
+                    while (!int.TryParse(ReadLine(), out palpite) || palpite < 1 || palpite > 10)
                     {
-                    SetCursorPosition(25, 15);
-                    WriteLine($"O número {num1} é maior que {num2}.");
-                }
-                else if (num1 < num2)
-                {
-                    SetCursorPosition(25, 15);
-                    WriteLine($"O número {num1} é menor que {num2}.");
-                }
-                else
-                {
-                    SetCursorPosition(25, 15);
-                    WriteLine($"Os números {num1} e {num2} são iguais.");
-                }
+                        SetCursorPosition(25, 5);
+                        Write("Digite um número válido entre 1 e 10: ");
+                    }
+                    tentativas++;
+                    if (palpite < num)
+                    {
+                        SetCursorPosition(25, 7);
+                        Write("Tente um número maior.");
+                    }
+                    else if (palpite > num)
+                    {
+                        SetCursorPosition(25, 7);
+                        Write("Tente um número menor.");
+                    }
+                    else
+                    {
+                        SetCursorPosition(25, 7);
+                        Write($"Parabéns! Você acertou o número {num} em {tentativas} tentativas.");
+                    }
+                } while (palpite != num);
 
                 SetCursorPosition(2, 24);
-                Write("Deseja repetir? (sim/não)");
+                Write("Deseja jogar novamente? (sim/não): ");
                 repetir = ReadLine().ToLower();
-
-            } while (repetir == "sim");
-        }
-
-        static void AdivinhaNum()
-        {
-         
+            } while(repetir == "sim");
         }
 
         static void Descanso_Tela()
